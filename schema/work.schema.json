@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SnehanshnC/content-pack/schema/work.schema.json",
+  "title": "Work",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["work"],
+  "$defs": {
+    "link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "note": { "type": "string" }
+      }
+    },
+    "linkValue": {
+      "oneOf": [
+        { "$ref": "#/$defs/link" },
+        { "type": "array", "items": { "$ref": "#/$defs/link" }, "minItems": 1 }
+      ]
+    }
+  },
+  "properties": {
+    "work": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "company", "role", "start", "end", "location", "highlights"],
+        "properties": {
+          "slug": { "type": "string" },
+          "company": { "type": "string" },
+          "role": { "type": "string" },
+          "start": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+          "end": {
+            "oneOf": [
+              { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+              { "type": "null" }
+            ]
+          },
+          "location": { "type": "string" },
+          "highlights": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" }
+          },
+          "links": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/$defs/linkValue" }
+          },
+          "project": { "type": "string" }
+        }
+      }
+    }
+  }
+}

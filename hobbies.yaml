@@ -1,0 +1,42 @@
+shows:
+  - slug: chainsaw-man
+    title: Chainsaw Man
+    category: anime
+    blurb: The story arc was good.
+
+  - slug: rick-and-morty
+    title: Rick and Morty
+    category: adult-animation
+    blurb: It's just funny. One of my favourites.
+
+  - slug: money-heist
+    title: Money Heist
+    category: live-action
+
+  - slug: bobs-burgers
+    title: Bob's Burgers
+    category: adult-animation
+    blurb: A really good comfort show.
+
+  - slug: bojack-horseman
+    title: BoJack Horseman
+    category: adult-animation
+    blurb: Hits really hard at home. I can relate to it very much.
+
+  - slug: white-lotus
+    title: The White Lotus
+    category: live-action
+
+hobbies:
+  - slug: hackathons
+    detail: Weekends go to hackathons.
+
+  - slug: basketball
+    detail: Knows every detail about LeBron James's legacy.
+
+  - slug: meme-culture
+    detail: Turning brain rot into brain nourishment.
+    related_project: synapse
+
+  - slug: reading
+    detail: Currently rereading Flash Boys.

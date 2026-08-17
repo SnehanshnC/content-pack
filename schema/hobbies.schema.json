@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SnehanshnC/content-pack/schema/hobbies.schema.json",
+  "title": "Hobbies",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["shows", "hobbies"],
+  "properties": {
+    "shows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "title", "category"],
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["anime", "adult-animation", "live-action"]
+          },
+          "blurb": { "type": "string" }
+        }
+      }
+    },
+    "hobbies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "detail"],
+        "properties": {
+          "slug": { "type": "string" },
+          "detail": { "type": "string" },
+          "related_project": { "type": "string" }
+        }
+      }
+    }
+  }
+}

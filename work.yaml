@@ -1,0 +1,46 @@
+work:
+  - slug: novaflow
+    company: NovaFlow
+    role: AI Engineer
+    start: "2025-05"
+    end: null
+    location: San Francisco, CA / Remote
+    highlights:
+      - Architected the agent orchestration layer for an agentic bioinformatics platform, implementing a code-as-context pattern where an LLM agent plans, generates, and executes analysis code against genomics data (FASTQ, scRNA-seq up to 1TB+) while keeping raw data out of the model context window.
+      - Built backend Modal integration provisioning ephemeral spot GPU compute for on-demand model inference and sandboxed code execution, cutting compute cost ~70% via preemptible instances with async job queues and automatic retry/checkpointing.
+      - Engineered end-to-end ML pipeline over Postgres + S3 with Langfuse observability, integrating Anthropic tool-use and semantic embeddings to translate natural-language queries into reproducible single-cell analyses (Scanpy UMAP, KEGG pathway mapping).
+    links:
+      company_linkedin:
+        label: Company LinkedIn
+        url: https://www.linkedin.com/company/novaflow-ai/posts
+
+  - slug: yuno
+    company: Yuno Research
+    role: Co-Founder & Lead Infrastructure Engineer
+    start: "2024-08"
+    end: "2026-01"
+    location: New York, NY / Remote
+    highlights:
+      - Co-founded on-chain prop desk deploying automated trading strategies on Solana, tracking 60% of DEX volume and processing 25M daily swaps across major liquidity pools.
+      - Architected high-throughput Rust ingestion engine with non-blocking async I/O and parallel processing, achieving 5GB/s disk saturation and processing 700GB+ historical blocks in under 3 minutes.
+      - Implemented Tokio broadcast channels streaming decoded swaps into batched Polars writer, transforming raw blockchain ledger into standardized Parquet market data containing 25M swaps/day.
+      - Led 8-person engineering team with CI/CD via GitHub Actions achieving 84% unit-test coverage across daily scrums and Agile workflows.
+    links:
+      solana_tx_decoding:
+        label: solana_tx_decoding (org repo)
+        url: https://github.com/yuno-research/solana_tx_decoding
+      solana_central:
+        label: solana_central (org repo)
+        url: https://github.com/yuno-research/solana_central
+
+  - slug: algora
+    company: Algora
+    role: Software Engineering Intern
+    start: "2025-02"
+    end: "2025-06"
+    location: New York, NY
+    highlights:
+      - Built high-concurrency Selenium/Puppeteer scrapers to extract structured data from LinkedIn, GitHub, and Indeed, parsing portfolios and surfacing matched roles with 60% precision across thousands of job postings.
+      - Fine-tuned open-source LLaMA models on Modal to extract and summarize employable skills from unstructured data, reducing application time by 90% and improving job-skill match precision by 38%.
+      - Engineered dynamic autofill layer enabling one-click submissions across diverse ATS templates, increasing job application throughput by 300% and winning 1st Place Overall at HackNYU.
+    project: algora

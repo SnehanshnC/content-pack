@@ -1,0 +1,20 @@
+links:
+  - slug: github
+    label: GitHub
+    url: https://github.com/SnehanshnC
+
+  - slug: linkedin
+    label: LinkedIn
+    url: https://www.linkedin.com/in/snehanshn-chowdhury-6aa2922b4/
+
+  - slug: devpost
+    label: Devpost
+    url: https://devpost.com/iamsnehanshn
+
+  - slug: devfolio
+    label: Devfolio
+    url: https://devfolio.co/@SnehanshnC
+
+  - slug: website
+    label: Website
+    url: https://snehanshn-site.vercel.app

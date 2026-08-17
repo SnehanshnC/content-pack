@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SnehanshnC/content-pack/schema/identity.schema.json",
+  "title": "Identity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "role", "education", "taglines", "skills"],
+  "properties": {
+    "name": { "type": "string" },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "company", "program"],
+      "properties": {
+        "title": { "type": "string" },
+        "company": { "type": "string" },
+        "program": { "type": "string" }
+      }
+    },
+    "education": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["institution", "degree", "start_year", "end_year"],
+      "properties": {
+        "institution": { "type": "string" },
+        "degree": { "type": "string" },
+        "start_year": { "type": "integer" },
+        "end_year": { "type": "integer" }
+      }
+    },
+    "taglines": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["languages", "frameworks", "tools"],
+      "properties": {
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "frameworks": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

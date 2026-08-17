@@ -1,0 +1,223 @@
+projects:
+  - slug: synapse
+    name: Synapse
+    summary: AI learning companion that turns brain rot into brain nourishment.
+    highlights:
+      - GraphRAG over a Neo4j-backed knowledge graph to repurpose short-form video into educational maps, increasing objective retention by 80%.
+      - iOS ReplayKit real-time WebSocket streaming pipeline.
+      - OCR/Transcription backend pipeline extracting entities and using Gemini embeddings to map semantic relationships into the graph database, enabling cross-context retrieval.
+    stack:
+      - Next.js
+      - Python
+      - Neo4j
+      - GraphRAG
+      - pgvector
+      - PyTesseract
+    built_at: HackRU Fall 2025
+    date: "2025-10"
+    links:
+      devpost:
+        url: https://devpost.com/software/synapse-2bs4hv
+      youtube:
+        url: https://www.youtube.com/watch?v=v_MqGEB6GJM
+      code:
+        url: https://github.com/rayedchow/hackru-25
+        note: repo lives on a teammate's account
+    notes:
+      - Also presented at Princeton Hackathon with a different UI.
+
+  - slug: valence
+    name: Valence
+    summary: Market-based pricing layer for APIs, where pricing moves with demand, built with Solana and x402 payments.
+    teammates:
+      - Ashad Shaik-Mohamed
+      - Yasser Zguiouar
+      - Christian Dizon
+    links:
+      devfolio:
+        url: https://devfolio.co/projects/fffff-ffa1
+
+  - slug: jerseyctf
+    name: JerseyCTF VI
+    summary: Cybersecurity capture-the-flag competition hosted at NJIT.
+
+  - slug: quarry
+    name: Quarry
+    summary: Schema-only data marketplace with AI-planned SQL previews and an x402 micropayment loop.
+    highlights:
+      - x402 micropayment loop where AI agents quote per-row cost, verify Solana transfers, and conditionally execute DuckDB queries to stream purchased Parquet slices, achieving ~100x faster payments.
+    stack:
+      - FastAPI
+      - DuckDB
+      - Next.js
+      - TypeScript
+      - Solana x402
+      - IPFS
+    built_at: HackRU
+    date: "2025-12"
+    links:
+      code:
+        url: https://github.com/rayedchow/quarry-ai
+        note: repo lives on a teammate's account
+
+  - slug: algora
+    name: Algora
+    summary: Auto job application engine that scrapes GitHub, Devpost, and LinkedIn, generates LLM cover letters, and autofills applications via Selenium.
+    highlights:
+      - Includes an application dashboard.
+    links:
+      devpost:
+        url: https://devpost.com/software/algora
+      code:
+        url: https://github.com/rayedchow/hof-hacks
+        note: repo lives on a teammate's account
+
+  - slug: caps
+    name: CAPS
+    summary: AI interview anti-cheat tool combining screen and audio recording, lip-sync detection, and eye tracking into a trust score for recruiters.
+
+  - slug: grokxads
+    name: GrokXAds
+    summary: Hyper-personalized native ads platform built for the xAI Hackathon.
+    notes:
+      - Shipped a full end-to-end product ("shipping > winning").
+
+  - slug: instructifai
+    name: InstructifAI
+    summary: Presentation coach using facial expression recognition, head-nod detection, and real-time speech transcription for timestamped feedback.
+    links:
+      press:
+        label: Featured by Reach Capital
+        url: https://www.linkedin.com/company/reach-capital/posts
+
+  - slug: medify
+    name: Medify
+    summary: AI battlefield medicine assistant for wound assessment, treatment guidance, and supply-aware recommendations.
+    notes:
+      - A JBL speaker was used as a program trigger.
+
+  - slug: fraxai
+    name: FraxAI
+    summary: AI fracture detection on X-rays using Detectron2, paired with a treatment-instruction LLM for ER nurses.
+    links:
+      devpost:
+        url: https://devpost.com/software/fraxai
+      code:
+        - url: https://github.com/rayedchow/hackru-model
+          note: repo lives on a teammate's account
+        - url: https://github.com/rayedchow/hackru-next
+          note: repo lives on a teammate's account
+
+  - slug: honeyflow
+    name: Honeyflow
+    summary: Auto-pays every open source contributor in a dependency tree using AI attribution scores and ETH auto-distribution.
+    highlights:
+      - Crawls npm, PyPI, and arXiv for dependency and attribution data.
+      - Human juror verification precedes ETH auto-distribution.
+    teammates:
+      - Rayed Chowdhury
+      - Aaron Tang
+      - Will O'Keefe
+    built_at: ETHDenver
+    links:
+      code:
+        url: https://github.com/rayedchow/honeyflow
+        note: repo lives on a teammate's account
+
+awards:
+  - slug: hacknyu-2025
+    project: algora
+    event: HackNYU
+    year: 2025
+    placement: 1st Place Overall
+    participants: 60+ teams
+
+  - slug: jerseyctf-vi
+    project: jerseyctf
+    event: JerseyCTF VI
+    placement: 1st Place Overall
+    participants: "~1300"
+    prize: $750 cash + CompTIA Security+ voucher
+    notes:
+      - Hosted at NJIT.
+
+  - slug: hackru-fall-2025-education-1st
+    project: synapse
+    event: HackRU Fall 2025
+    year: 2025
+    placement: "1st"
+    track: Education Track
+    participants: 450+
+
+  - slug: hackru-education-2nd
+    project: instructifai
+    event: HackRU
+    placement: "2nd"
+    track: Education Track
+    extras:
+      - Best Use of Gen AI (sponsored by Reach Capital)
+
+  - slug: hackru-best-freshman-hack
+    project: fraxai
+    event: HackRU
+    placement: Best Freshman Hack
+    participants: 120 teams
+    notes:
+      - First hackathon ever.
+
+  - slug: medify-hacknjit-2024
+    project: medify
+    event: HackNJIT
+    year: 2024
+    placement: "3rd"
+    participants: 200+
+    prize: $500
+    extras:
+      - Best Innovation in Emergency Medical AI
+      - MLH Golden Pin
+
+  - slug: grokxads-xai-select
+    project: grokxads
+    event: xAI Hackathon
+    selection: xAI Hackathon Select, 420 of 50,000
+    notes:
+      - Did not place; shipped a full end-to-end product.
+
+  - slug: valence-blockchain-at-usc
+    project: valence
+    event: Blockchain at USC
+    placement: "2nd"
+    track: Solana Track
+
+  - slug: caps-shark-tank-rutgers
+    project: caps
+    event: Shark Tank at Rutgers
+    placement: "2nd"
+    participants: top 6 of 60+ teams
+    prize: $1500+
+
+  - slug: caps-techstart
+    project: caps
+    event: TechStart Competition (RSVP x Rutgers Entrepreneurial Society)
+    placement: "2nd"
+    prize: $1500
+
+programs:
+  - slug: yc-startup-school
+    name: YC Startup School
+    detail: Invited.
+    date: "2025-06"
+
+  - slug: yc-intern-mixer
+    name: YC Intern Mixer
+    detail: Via NovaFlow.
+    year: 2025
+
+  - slug: asu-gsv-ai-innovator
+    name: ASU+GSV AI Innovator
+    detail: The AI Show, San Diego.
+    date: "2025-04"
+
+  - slug: rsvp
+    name: Road to Silicon Valley (RSVP)
+    detail: 6th-cohort member; 2nd place in RSVP's shark-tank competition.

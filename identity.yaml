@@ -1,0 +1,46 @@
+name: Snehanshn Chowdhury
+role:
+  title: AI Engineer
+  company: NovaFlow
+  program: Y Combinator S25
+education:
+  institution: Rutgers University - New Brunswick
+  degree: BS in Computer Science and Mathematics
+  start_year: 2024
+  end_year: 2028
+taglines:
+  - "Current quest: Saving lives with AI."
+  - "All is well."
+  - "Not a coffee guy"
+skills:
+  languages:
+    - Python
+    - Rust
+    - TypeScript
+    - JavaScript
+    - SQL
+    - Bash
+    - Solidity (Still Learning)
+  frameworks:
+    - React
+    - Next.js
+    - Node.js
+    - Flask
+    - FastAPI
+    - PyTorch
+    - Polars
+    - Tokio
+    - Selenium
+    - Puppeteer
+    - Solana Web3.js
+  tools:
+    - Git
+    - Docker
+    - Modal
+    - AWS (S3, EC2, ECS)
+    - GCP
+    - PostgreSQL
+    - Neo4j
+    - DuckDB
+    - Langfuse
+    - Firebase / Vercel

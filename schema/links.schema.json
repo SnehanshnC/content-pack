@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SnehanshnC/content-pack/schema/links.schema.json",
+  "title": "Links",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["links"],
+  "properties": {
+    "links": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "label", "url"],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "enum": ["github", "linkedin", "devpost", "devfolio", "website"]
+          },
+          "label": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    }
+  }
+}
