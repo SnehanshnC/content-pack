@@ -18,3 +18,7 @@ links:
   - slug: website
     label: Website
     url: https://snehanshn-site.vercel.app
+
+  - slug: ssh
+    label: SSH
+    url: ssh://snehanshn.duckdns.org
