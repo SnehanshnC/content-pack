@@ -12,7 +12,7 @@ Each surface keeps its own display mapping - tone, styling, ordering - in its ow
 - `identity.yaml` - name, role, education, the shared tagline pool, and the skills list.
 - `work.yaml` - work history entries, one per role, with highlights and links.
 - `projects.yaml` - three top-level keys: `projects` (project writeups), `awards` (a flat list of hackathon and competition results, each referencing a project by slug), and `programs` (non-hackathon recognition, such as YC Startup School).
-- `links.yaml` - the five canonical handles: github, linkedin, devpost, devfolio, website.
+- `links.yaml` - the five canonical handles: github, linkedin, devpost, devfolio, ssh.
 - `hobbies.yaml` - two top-level keys: `shows` (what Snehanshn watches) and `hobbies` (everything else).
 
 Each section file has a matching schema in `schema/`, and both are validated together by `scripts/validate.py`.
