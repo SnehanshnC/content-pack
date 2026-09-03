@@ -8,8 +8,8 @@
   "properties": {
     "links": {
       "type": "array",
-      "minItems": 6,
-      "maxItems": 6,
+      "minItems": 5,
+      "maxItems": 5,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -17,7 +17,7 @@
         "properties": {
           "slug": {
             "type": "string",
-            "enum": ["github", "linkedin", "devpost", "devfolio", "website", "ssh"]
+            "enum": ["github", "linkedin", "devpost", "devfolio", "ssh"]
           },
           "label": { "type": "string" },
           "url": { "type": "string", "format": "uri" }

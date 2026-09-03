@@ -15,10 +15,6 @@ links:
     label: Devfolio
     url: https://devfolio.co/@SnehanshnC
 
-  - slug: website
-    label: Website
-    url: https://snehanshn-site.vercel.app
-
   - slug: ssh
     label: Address
     url: ssh://snehanshn.duckdns.org
